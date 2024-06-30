@@ -4,6 +4,7 @@
   --primary_color: #e7c13b;
   --secondary_color: rgb(35, 34, 34);
   --white_color: rgb(243, 243, 243);
+  --radius_5: 5px;
 }
 
 * {
@@ -112,11 +113,7 @@ header {
 .overlay {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.594),
-    rgba(0, 0, 0, 0.976)
-  );
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.976));
   color: var(--white_color);
   display: flex;
   justify-content: center;
@@ -187,7 +184,7 @@ header {
 
 .about-us .description img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: var(--radius_5);
   margin-bottom: 15px;
 }
 
@@ -224,4 +221,97 @@ header {
 }
 /* ========================================================================== */
 /* ABOUT US */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* SECTION'S MARGIN TOP */
+/* ========================================================================== */
+.services,
+.properties {
+  margin-top: 30px;
+}
+/* ========================================================================== */
+/* SECTION'S MARGIN TOP */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* SERVICES */
+/* ========================================================================== */
+.service-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-list .service-item {
+  margin-bottom: 35px;
+}
+
+.service-list .service-item img {
+  width: 100%;
+  border-radius: var(--radius_5);
+}
+
+.service-list .service-item p {
+  line-height: 30px;
+}
+
+.service-list .service-item h3 {
+  margin-top: 10px;
+}
+
+.service-list .service-item:last-child {
+  margin-bottom: 0;
+}
+/* ========================================================================== */
+/* SERVICES */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* PROPERTIES */
+/* ========================================================================== */
+.properties p {
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.property-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.property-list .property-item {
+  margin-bottom: 55px;
+}
+
+.property-list .property-item img {
+  width: 100%;
+  border-radius: var(--radius_5);
+}
+
+.property-list .property-item p {
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.property-list .property-item p.location {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.property-list .property-item h3 {
+  margin-top: 10px;
+}
+
+.property-list .property-item:last-child {
+  margin-bottom: 0;
+}
+
+.property-item .location i {
+  font-size: 1.5rem;
+  color: rgb(187, 55, 55);
+}
+
+/* ========================================================================== */
+/* PROPERTIES */
 /* ========================================================================== */
